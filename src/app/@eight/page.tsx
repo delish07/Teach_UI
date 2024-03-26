@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function eight() {
   return (
-    <section className="bg-yellow-400 h-screen flex items-center justify-center relative">
+    <section className="bg-yellow-400 md:h-screen h-[30rem] flex items-center justify-center relative">
       {/* left */}
       <Image
         className="absolute left-0 md:block hidden z-10"
@@ -20,7 +20,7 @@ export default function eight() {
       ></Image>
       {/* middle */}
       <div className="flex flex-col gap-5 items-center justify-center z-20">
-        <p className="text-xl md:text-3xl text-center font-bold">
+        <p className="text-3xl md:text-3xl text-center font-bold">
           Join a world of learning
         </p>
 
