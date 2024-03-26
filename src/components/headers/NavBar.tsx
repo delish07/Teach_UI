@@ -11,7 +11,6 @@ const NavBar: React.FC = () => {
   const [click, setClick] = useState(false);
   function handleNav() {
     setClick(!click);
-    console.log(click);
   }
   return (
     <header>
@@ -137,18 +136,43 @@ const NavBar: React.FC = () => {
             Sign Up Now
           </button>
         </div>
-        {/* button */}
-        <div
+        {/* nav icon */}
+        <button
+          className="ml-auto md:ml-0 md:hidden flex items-center px-3 py-2 rounded text-gray-500 hover:text-black relative mt-2"
           onClick={handleNav}
-          className="ml-auto md:hidden py-2 hover:cursor-pointer"
         >
-          <Image
-            src="./icons/menu.svg"
-            alt="menu"
-            width={14}
-            height={14}
-          ></Image>
-        </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            stroke="currentColor"
+            viewBox="0 0 50 50"
+            className={`h-6 w-6 absolute top-0 left-0 transition-all duration-300 transform ${
+              click ? "rotate-180" : ""
+            } ${click ? "opacity-0 scale-0" : "opacity-100 scale-100"}`}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"
+            />
+          </svg>
+          <svg
+            className={`h-6 w-6 absolute top-0 left-0 transition-all duration-300 transform ${
+              click ? "" : "rotate-180"
+            } ${click ? "opacity-100 scale-100" : "opacity-0 scale-0"} `}
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
       </div>
     </header>
   );
