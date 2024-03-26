@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useRef } from "react";
+import React, { useRef } from "react";
 import SwiperCore from "swiper";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -10,7 +10,7 @@ import "swiper/swiper-bundle.css";
 SwiperCore.use([Navigation]);
 
 export default function sixth() {
-  const swiperRef = useRef<any>(null);
+  const swiperRef = useRef<any>();
 
   const goToPrev = () => {
     if (swiperRef.current && swiperRef.current.swiper) {
