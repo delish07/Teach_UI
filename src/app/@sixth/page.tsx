@@ -9,7 +9,7 @@ import "swiper/swiper-bundle.css";
 
 SwiperCore.use([Navigation]);
 
-export default function sixth() {
+const Sixth: React.FC = () => {
   const swiperRef = useRef<any>();
 
   const goToPrev = () => {
@@ -182,4 +182,6 @@ export default function sixth() {
       </div>
     </section>
   );
-}
+};
+
+export default Sixth;
