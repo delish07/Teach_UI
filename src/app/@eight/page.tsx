@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function eight() {
   return (
-    <section className="bg-yellow-400 md:h-screen h-[30rem] flex items-center justify-center relative">
+    <section className="bg-yellow-400 md:h-screen h-[30rem] flex items-center justify-center relative overflow-hidden">
       {/* left */}
       <Image
-        className="absolute left-0 md:block hidden z-10"
+        className="absolute left-0 md:block hidden z-10 w-80"
         src="/pics/eight-page/pic-1.svg"
         width={300}
         height={123}
@@ -30,7 +30,7 @@ export default function eight() {
       </div>
       {/* right */}
       <Image
-        className="absolute right-0 md:block hidden z-10"
+        className="absolute right-0 md:block hidden z-10 w-80"
         src="/pics/eight-page/pic-2.svg"
         width={300}
         height={123}

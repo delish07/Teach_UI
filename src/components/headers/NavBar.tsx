@@ -25,14 +25,12 @@ const NavBar: React.FC = () => {
             width={22}
             alt="uteach"
           ></Image>
-          <p className="font-bold text-2xl hover:cursor-pointer md:mr-8">
-            teach
-          </p>
+          <p className="font-bold text-2xl hover:cursor-pointer ">teach</p>
         </div>
         {/* middle */}
         <div
           className={` ${click ? "" : "hidden"} z-30
-         absolute md:relative bg-gray-200 left-10 pt-5 md:pt-0 md:bg-white w-10/12 md:w-0 px-5 rounded-t-lg top-16 md:top-0 md:flex gap-10 items-center`}
+         absolute md:relative bg-gray-200 left-10 pt-5 md:pt-0 md:bg-white w-10/12 md:w-0 px-5 md:px-0 rounded-t-lg top-16 md:top-0 md:flex gap-10 items-center`}
         >
           <p className="font-semibold hover:cursor-pointer hover:underline underline-offset-8">
             Products
