@@ -15,16 +15,16 @@ const NavBar: React.FC = () => {
   return (
     <header>
       {/* main */}
-      <div className="flex gap-2 px-10 py-2 md:py-4 md:justify-center md:items-center">
+      <div className="flex gap-2 px-10 py-2 md:py-4 md:justify-center md:items-center ">
         {/* left */}
-        <div className="flex gap-1">
+        <div className="flex gap-1 md:mt-0 mt-1">
           <Image
             src="/icons/uteach.svg"
             height={21}
             width={22}
             alt="uteach"
           ></Image>
-          <p className="font-bold text-2xl hover:cursor-pointer ">teach</p>
+          <p className="font-bold text-2xl hover:cursor-pointer">teach</p>
         </div>
         {/* middle */}
         <div
