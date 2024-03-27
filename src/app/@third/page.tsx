@@ -11,7 +11,18 @@ export default function third() {
         <div className="flex ">
           <div className="flex flex-col justify-center gap-8 mx-10">
             <p className="text-3xl md:text-5xl font-bold">
-              An all-in-one app that makes it easier
+              An{" "}
+              <span className="relative inline-block">
+                <Image
+                  src="/lines/text-stroke.svg"
+                  className="w-full absolute bottom-[-0.3rem] md:bottom-[-0.8rem] z-[-1]"
+                  width={12}
+                  height={20}
+                  alt="stroke"
+                ></Image>
+                all-in-one
+              </span>{" "}
+              app that makes it easier
             </p>
             <p className="md:hidden block">
               Sit elit feugiat turpis sed integer integer accumsan turpis. Sed

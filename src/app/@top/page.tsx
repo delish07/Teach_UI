@@ -7,24 +7,21 @@ export default function top() {
         {/* left */}
         <div className="flex flex-col items-center px-10 justify-around gap-10">
           {/* top */}
-          <div className="flex flex-col relative">
+          <div className="flex flex-col">
             <h1 className="mb-0 text-4xl md:text-5xl pb-6 text-left font-bold z-10">
-              Teach students worldwide
+              <span className="relative">
+                <Image
+                  className="absolute inline-block bottom-[-0.5px] w-full z-[-1]"
+                  src="lines/text-stroke.svg"
+                  width={130}
+                  height={12}
+                  alt="stroke"
+                ></Image>
+                Teach
+              </span>{" "}
+              students worldwide
             </h1>
-            <Image
-              className="absolute top-10 hidden md:block"
-              src="lines/text-stroke.svg"
-              width={130}
-              height={12}
-              alt="stroke"
-            ></Image>
-            <Image
-              className="absolute top-8 md:hidden"
-              src="lines/text-stroke.svg"
-              width={100}
-              height={30}
-              alt="stroke"
-            ></Image>
+
             <p>Amet nunc diam orci duis ut sit diam arcu, nec.</p>
             <p>Eleifend proinmassa tincidunt viverra lectus pulvinar.</p>
             <p>Nunc ipsum est pellentesque turpis ultricies.</p>

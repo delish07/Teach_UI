@@ -3,27 +3,23 @@ import Image from "next/image";
 export default function second() {
   return (
     <>
-      <section className="flex flex-col items-center md:bg-gray-200 gap-5 md:gap-14 p-5 relative">
+      <section className="flex flex-col items-center md:bg-gray-200 gap-5 md:gap-14 p-5 relative z-[-2]">
         {/* top */}
         <div className="mt-5 relative">
-          <p className="text-xl md:text-5xl font-bold md:text-center mb-4 relative z-10 ">
-            All the tools that you need
+          <p className="text-xl md:text-5xl font-bold md:text-center mb-4 z-10">
+            All the{" "}
+            <span className="relative inline-block ">
+              <Image
+                className="absolute  bottom-[0.15rem] md:bottom-[-0.3rem] z-[-1] w-full"
+                src="/lines/text-stroke.svg"
+                width={105}
+                height={12}
+                alt="text-stroke"
+              />{" "}
+              tools
+            </span>{" "}
+            that you need
           </p>
-          {/* line strokes */}
-          <Image
-            className="absolute left-56 top-10 hidden md:block"
-            src="/lines/text-stroke.svg"
-            width={105}
-            height={12}
-            alt="text-stroke"
-          />
-          <Image
-            className="absolute left-16 top-5 md:hidden"
-            src="/lines/text-stroke.svg"
-            width={55}
-            height={30}
-            alt="text-stroke"
-          />
           <p className="md:text-center text-lg relative z-10">
             Sit elit feugiat turpis sed integer integer accumsan turpis. Sed
             suspendisse nec lorem mauris.
